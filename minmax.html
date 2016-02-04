@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+<p id ="list">Maximum and Minimum Numbers from the given list are:<br> </p>
+<script> 
+	function minmax() {
+	 var arr=[];
+	
+	var max= arguments[0];
+	var min= arguments[0];
+	for (var i =1; i <arguments.length; i ++) {
+			
+	  if (max < arguments[i]) {	max=arguments[i];	}
+	  if (min > arguments[i]) {	min=arguments[i];	}
+	}
+	 document.getElementById("list").innerHTML += "Max is: " + max + "<br>" +
+	 "Min is: " + min + "<br>"; }
+	minmax(1,2,3, 28, 5345, 67, -2345)
+</script>
+
+</body>
+</html> 
